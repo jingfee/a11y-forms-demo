@@ -1,9 +1,10 @@
 <strong>Textfält</strong>
 <br />
-<label for="input_email">E-post</label>
+<label for="input_email">E-post</label><br />
 <input type="email" id="input_email" autocomplete="email" />
 <br />
-<label for="input_required">Obligatorisk</label>
+<br />
+<label for="input_required">Obligatorisk</label><br />
 <input type="text" id="input_required" aria-required="true" />
 
 <br />
@@ -30,7 +31,7 @@
   </div>
 </fieldset>
 
-<fieldset>
+<fieldset aria-required="true">
   <legend>Välj en</legend>
 
   <input type="radio" id="radio_1" name="radio" />
@@ -49,8 +50,25 @@
 <strong>Dropdown</strong>
 <br />
 <label for="select"> Välj ett alternativ </label>
-<select id="select">
+<br />
+<select id="select" aria-required="true">
   <option value="A">Alpha</option>
   <option value="B">Bravo</option>
   <option value="C">Charlie</option>
 </select>
+
+<br />
+<br />
+
+<strong>Validering</strong>
+<br />
+<label for="input_invalid">Textfält med fel</label>
+<br />
+<input
+  type="text"
+  id="input_invalid"
+  aria-invalid="true"
+  aria-describedby="validation_text"
+/>
+<br />
+<strong id="validation_text">Fyll i fältet i formatet XYZ</strong>
