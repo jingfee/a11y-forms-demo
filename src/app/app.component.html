@@ -1,47 +1,47 @@
-<strong>Textfält</strong>
+<strong>Text field</strong>
 <br />
-<label for="input_email">E-post</label><br />
+<label for="input_email">Email</label><br />
 <input type="email" id="input_email" autocomplete="email" />
 <br />
 <br />
-<label for="input_required">Obligatorisk</label><br />
+<label for="input_required">Required</label><br />
 <input type="text" id="input_required" aria-required="true" />
 
 <br />
 <br />
 
-<strong>Kryssrutor & radioknappar</strong>
+<strong>Checkboxes and radiobuttons</strong>
 <br />
 <fieldset>
-  <legend>En fråga?</legend>
+  <legend>A question?</legend>
 
   <div>
     <input id="check_1" type="checkbox" />
-    <label for="check_1">Val 1</label>
+    <label for="check_1">Option 1</label>
   </div>
 
   <div>
     <input id="check_2" type="checkbox" />
-    <label for="check_2">Val 2</label>
+    <label for="check_2">Option 2</label>
   </div>
 
   <div>
     <input id="check_3" type="checkbox" />
-    <label for="check_3">Val 3</label>
+    <label for="check_3">Option 3</label>
   </div>
 </fieldset>
 
 <fieldset aria-required="true">
-  <legend>Välj en</legend>
+  <legend>Choose one</legend>
 
   <input type="radio" id="radio_1" name="radio" />
-  <label for="radio_1">Val 1</label>
+  <label for="radio_1">Option 1</label>
 
   <input type="radio" name="radio" id="radio_2" />
-  <label for="radio_2">Val 2</label>
+  <label for="radio_2">Option 2</label>
 
   <input type="radio" name="radio" id="radio_3" />
-  <label for="radio_3">Val 3</label>
+  <label for="radio_3">Option 3</label>
 </fieldset>
 
 <br />
@@ -49,7 +49,7 @@
 
 <strong>Dropdown</strong>
 <br />
-<label for="select"> Välj ett alternativ </label>
+<label for="select"> Choose one option </label>
 <br />
 <select id="select" aria-required="true">
   <option value="A">Alpha</option>
@@ -60,9 +60,9 @@
 <br />
 <br />
 
-<strong>Validering</strong>
+<strong>Validation</strong>
 <br />
-<label for="input_invalid">Textfält med fel</label>
+<label for="input_invalid">Text field with error</label>
 <br />
 <input
   type="text"
@@ -71,4 +71,4 @@
   aria-describedby="validation_text"
 />
 <br />
-<strong id="validation_text">Fyll i fältet i formatet XYZ</strong>
+<strong id="validation_text">Fill in the field in the format XYZ</strong>
